@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_all_clear"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/all_clear"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_operator_negative_positive"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/negative_positive" />
+
+        <TextView
+            android:id="@+id/tv_operator_percent"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/percent" />
+
+        <TextView
+            android:id="@+id/tv_operator_div"
+            style="@style/StandardTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/operator_div" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_number_seven"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_seven"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_number_eight"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_eight" />
+
+        <TextView
+            android:id="@+id/tv_number_nine"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_nine" />
+
+        <TextView
+            android:id="@+id/tv_operator_mul"
+            style="@style/StandardTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/operator_mul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_number_four"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_four"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_number_five"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_five" />
+
+        <TextView
+            android:id="@+id/tv_number_six"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_six" />
+
+        <TextView
+            android:id="@+id/tv_operator_sub"
+            style="@style/StandardTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/operator_sub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_number_one"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_one"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_number_two"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_two" />
+
+        <TextView
+            android:id="@+id/tv_number_three"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/number_three" />
+
+        <TextView
+            android:id="@+id/tv_operator_add"
+            style="@style/StandardTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/operator_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_number_zero"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/number_zero"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tv_dot"
+            style="@style/NumberTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/dot" />
+
+        <TextView
+            android:id="@+id/tv_operator_equal"
+            style="@style/StandardTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/operator_equal" />
+
+    </LinearLayout>
+
+</LinearLayout>
