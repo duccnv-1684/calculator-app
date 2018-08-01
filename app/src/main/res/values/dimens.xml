@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_result_text_view_height">72dp</dimen>
+    <dimen name="dp_expression_text_view_height">60dp</dimen>
+    <dimen name="dp_border_stroke">1dp</dimen>
+    <dimen name="dp_result_text_view_padding">8dp</dimen>
+    <dimen name="dp_expression_text_view_padding">8dp</dimen>
+</resources>
