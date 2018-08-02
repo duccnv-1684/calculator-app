@@ -19,4 +19,5 @@
     <string name="all_clear">AC</string>
     <string name="negative_positive">+/-</string>
     <string name="percent">%</string>
+    <string name="syntax_error">Syntax Error</string>
 </resources>
