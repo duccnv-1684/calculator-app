@@ -11,25 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class StandardModeFragment extends Fragment implements View.OnClickListener {
-    private static final String ZERO = "0";
-    private static final String ONE = "1";
-    private static final String TWO = "2";
-    private static final String THREE = "3";
-    private static final String FOUR = "4";
-    private static final String FIVE = "5";
-    private static final String SIX = "6";
-    private static final String SEVEN = "7";
-    private static final String EIGHT = "8";
-    private static final String NINE = "9";
-    private static final String ADD = "+";
-    private static final String SUB = "-";
-    private static final String MUL = "*";
-    private static final String DIV = "/";
-    private static final String PERCENT = "%";
-    private static final String NEGATIVE_POSITIVE = "NP";
-    private static final String ALL_CLEAR = "AC";
-    private static final String DOT = ".";
-    private static final String EQUAL = "=";
+
     private OnViewClickedListener mOnViewClickedListener;
 
     @Override
@@ -54,70 +36,67 @@ public class StandardModeFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        String textToExpression;
         switch (view.getId()) {
             case R.id.tv_number_zero:
-                textToExpression = ZERO;
+                mOnViewClickedListener.addToExpression(Constant.ZERO);
                 break;
             case R.id.tv_number_one:
-                textToExpression = ONE;
+                mOnViewClickedListener.addToExpression(Constant.ONE);
                 break;
             case R.id.tv_number_two:
-                textToExpression = TWO;
+                mOnViewClickedListener.addToExpression(Constant.TWO);
                 break;
             case R.id.tv_number_three:
-                textToExpression = THREE;
+                mOnViewClickedListener.addToExpression(Constant.THREE);
                 break;
             case R.id.tv_number_four:
-                textToExpression = FOUR;
+                mOnViewClickedListener.addToExpression(Constant.FOUR);
                 break;
             case R.id.tv_number_five:
-                textToExpression = FIVE;
+                mOnViewClickedListener.addToExpression(Constant.FIVE);
                 break;
             case R.id.tv_number_six:
-                textToExpression = SIX;
+                mOnViewClickedListener.addToExpression(Constant.SIX);
                 break;
             case R.id.tv_number_seven:
-                textToExpression = SEVEN;
+                mOnViewClickedListener.addToExpression(Constant.SEVEN);
                 break;
             case R.id.tv_number_eight:
-                textToExpression = EIGHT;
+                mOnViewClickedListener.addToExpression(Constant.EIGHT);
                 break;
             case R.id.tv_number_nine:
-                textToExpression = NINE;
+                mOnViewClickedListener.addToExpression(Constant.NINE);
                 break;
             case R.id.tv_dot:
-                textToExpression = DOT;
+                mOnViewClickedListener.addToExpression(Constant.DOT);
                 break;
             case R.id.tv_operator_add:
-                textToExpression = ADD;
+                mOnViewClickedListener.addToExpression(Constant.ADD);
                 break;
             case R.id.tv_operator_sub:
-                textToExpression = SUB;
+                mOnViewClickedListener.addToExpression(Constant.SUB);
                 break;
             case R.id.tv_operator_mul:
-                textToExpression = MUL;
+                mOnViewClickedListener.addToExpression(Constant.MUL);
                 break;
             case R.id.tv_operator_div:
-                textToExpression = DIV;
+                mOnViewClickedListener.addToExpression(Constant.DIV);
                 break;
             case R.id.tv_operator_percent:
-                textToExpression = PERCENT;
+                mOnViewClickedListener.addToExpression(Constant.PERCENT);
                 break;
             case R.id.tv_operator_negative_positive:
-                textToExpression = NEGATIVE_POSITIVE;
+                mOnViewClickedListener.addToExpression(Constant.NEGATIVE_POSITIVE);
                 break;
             case R.id.tv_all_clear:
-                textToExpression = ALL_CLEAR;
+                mOnViewClickedListener.allClear();
                 break;
             case R.id.tv_operator_equal:
-                textToExpression = EQUAL;
+                mOnViewClickedListener.calculate();
                 break;
             default:
-                textToExpression = null;
                 break;
         }
-        mOnViewClickedListener.addToExpression(textToExpression);
     }
 
     private void setupViewInFragment(View view) {
@@ -133,6 +112,8 @@ public class StandardModeFragment extends Fragment implements View.OnClickListen
     }
 
     public interface OnViewClickedListener {
-        void addToExpression(String textToExpression);
+        void addToExpression(char textToExpression);
+        void calculate();
+        void allClear();
     }
 }
