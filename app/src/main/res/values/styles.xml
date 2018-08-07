@@ -12,16 +12,16 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center_vertical|right</item>
         <item name="android:background">@color/colorGrey</item>
-        <item name="android:padding">@dimen/dp_result_text_view_padding</item>
-        <item name="android:textSize">48sp</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:textSize">@dimen/sp_48</item>
     </style>
 
     <style name="ExpressionTextView" parent="android:Widget.TextView">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:padding">@dimen/dp_expression_text_view_padding</item>
+        <item name="android:padding">@dimen/dp_8</item>
         <item name="android:gravity">center_vertical|right</item>
         <item name="android:background">@color/colorGrey</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/sp_30</item>
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">start</item>
     </style>
@@ -29,20 +29,20 @@
     <style name="NumberTextView" parent="android:Widget.TextView">
         <item name="android:textColor">@color/colorTextButton</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/dp_24</item>
         <item name="android:background">@drawable/background_number_text_view</item>
     </style>
 
     <style name="StandardTextView" parent="android:Widget.TextView">
         <item name="android:textColor">@color/colorTextButton</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/sp_30</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/background_standard_text_view</item>
     </style>
 
     <style name="AdvanceTextView" parent="android:Widget.TextView">
         <item name="android:textColor">@color/colorTextButton</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/sp_18</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/background_advance_text_view</item>
     </style>

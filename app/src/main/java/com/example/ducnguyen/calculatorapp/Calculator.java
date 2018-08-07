@@ -18,17 +18,17 @@ public class Calculator {
         return true;
     }
 
-    public static double calculate(String expression) {
+    public static float calculate(String expression) {
         String correctedExpression = correctExpression(expression);
         String postFixExpression = convertInfixToPostFix(correctedExpression);
         String[] elements = postFixExpression.split(Constant.SPACE);
-        Stack<Double> stack = new Stack<>();
-        double temp = 0;
+        Stack<Float> stack = new Stack<>();
+        float temp = 0;
         int i = 0, length = elements.length;
         do {
             if (isOperator(elements[i].charAt(0))) {
-                double one = stack.pop();
-                double two = stack.pop();
+                float one = stack.pop();
+                float two = stack.pop();
                 switch (elements[i].charAt(0)) {
                     case Constant.MUL:
                         temp = one * two;
@@ -45,7 +45,7 @@ public class Calculator {
                 }
                 stack.push(temp);
             } else {
-                stack.push(Double.valueOf(elements[i]));
+                stack.push(Float.valueOf(elements[i]));
             }
             length--;
             i++;

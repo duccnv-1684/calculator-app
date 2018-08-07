@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dp_result_text_view_height">72dp</dimen>
-    <dimen name="dp_expression_text_view_height">60dp</dimen>
-    <dimen name="dp_border_stroke">1dp</dimen>
-    <dimen name="dp_result_text_view_padding">8dp</dimen>
-    <dimen name="dp_expression_text_view_padding">8dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="sp_48">48sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
 </resources>
