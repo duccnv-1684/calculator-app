@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class StandardModeFragment extends Fragment implements View.OnClickListener {
 
@@ -113,7 +112,9 @@ public class StandardModeFragment extends Fragment implements View.OnClickListen
 
     public interface OnViewClickedListener {
         void addToExpression(char textToExpression);
+
         void calculate();
+
         void allClear();
     }
 }
